@@ -1,7 +1,7 @@
 class String
   define_method(:scrabble) do
     word = []
-    split_word = self.split("").map do |letter|
+    split_word = self.upcase().split("").map do |letter|
     scrabble_letters = {
       1 => ["A", "E", "I", "O", "U","L", "N", "R","S","T"],
       2 => ["D","G"],
