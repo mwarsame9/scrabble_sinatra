@@ -5,7 +5,7 @@ Capybara.app = Sinatra::Application
 set(:show_exceptions, false)
 
 describe('the scrabble path', {:type => :feature}) do
-  it('processes the user entry and returns it title cased') do
+  it('processes the user entry and returns scrabble score') do
     visit('/')
     fill_in('title', :with => 'hello world')
     click_button('Send')
